@@ -110,6 +110,7 @@ names(finalData) <- c("Activity","SubjectNumber","tBodyAcc-mean()-X","tBodyAcc-m
 
 ## save finalData to the .csv file "tidy_data1.csv"
 write.csv(finalData,file = "tidy_data1.csv", row.names = F)
+write.table(finalData, "tidy_data_1.txt", row.name=F,quote=F)
 
 
 #Step 5
@@ -122,6 +123,6 @@ meanData <- dcast(meltData, SubjectNumber+Activity ~ variable,mean,na.rm=T)
 ###Step 5.2 rename the variables
 names(meanData)[3:68] <- paste("the_mean_of_",names(meanData)[3:68],sep="")
 
-###Step 5.3 save the dataset to 
+###Step 5.3 save the dataset to tidy_data2.csv and tidy_data_2.txt
 write.csv(meanData,file = "tidy_data2.csv", row.names = F)
-
+write.table(meanData, "tidy_data_2.txt", row.name=F,quote=F)

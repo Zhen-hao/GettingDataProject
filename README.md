@@ -136,10 +136,12 @@ f <- as.character(features[,2])
 names(finalData) <- c("Activity","SubjectNumber", f[c(1:6,41:46,81:86,121:126, 161:166,201,202,214,215,227,228,240,241,253,254, 266:271, 345:350, 424:429,503,504, 516,517,529,530, 542,543)])
 ```
 
-Then we save the dataframe "finalData" to the .csv file "tidy_data1.csv" as the tidy data after Step 4.
+Then we save the dataframe "finalData" to the .csv file "tidy_data1.csv" and the .txt file "tidy_data_2.txt" as the tidy data after Step 4.
 
 ```{r}
 write.csv(finalData,file = "tidy_data1.csv", row.names = F)
+write.table(finalData, "tidy_data_1.txt", row.name=F,quote=F)
+
 ```
 
 ### Step 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
@@ -159,8 +161,11 @@ names(meanData)[3:68] <- paste("the_mean_of_",names(meanData)[3:68],sep="")
 ```
 
 
-Then we save the dataframe "meanData" to the .csv file "tidy_data2.csv" as the tidy data after Step 5.
+Then we save the dataframe "meanData" to the .csv file "tidy_data2.csv" and the .txt file "tidy_data_2.txt" as the tidy data after Step 5.
 ```{r}
 write.csv(meanData,file = "tidy_data2.csv", row.names = F)
+write.table(meanData, "tidy_data_2.txt", row.name=F, quote=F)
+
 ```
 
+Note that tidy_data_1.txt and tidy_data_2.txt are the uploaded files in the submission.

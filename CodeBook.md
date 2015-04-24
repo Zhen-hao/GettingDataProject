@@ -64,7 +64,7 @@ The file README.md contains details about how the dataset "tidy_data1.csv" is ob
 
 ##Code Book 
 
-### tidy_data1.csv
+### Variables in tidy_data1.csv and tidy_data_1.txt
 #### IMPORTANT! The details of the meanings of the following variable names can be found in the session "Data Source". We provide the details of the unit and the range in this code book. We explain the meaning of tBodyAcc-mean()-X and hope that the reader can obtain the meanings of other variables from this example and the session "Data Source".  
 
 #### Activity
@@ -347,7 +347,7 @@ The units are rad/seg.
 The values are normalized and bounded within [-1,1].
 
 
-### tidy_data2.csv
+### Variables in tidy_data2.csv and tidy_data_2.txt
 #### IMPORTANT! The details of the meanings of the following variable names can be found in the session "Data Source". We provide the details of the unit and the range in this code book. We explain the meaning of the_mean_of_tBodyAcc-mean()-X and hope that the reader can obtain the meanings of other variables from this example and previous sessions.  
 
 ####SubjectNumber
