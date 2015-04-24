@@ -168,4 +168,4 @@ write.table(meanData, "tidy_data_2.txt", row.name=F, quote=F)
 
 ```
 
-Note that tidy_data_1.txt and tidy_data_2.txt are the uploaded files in the submission.
+Note that tidy_data_2.txt is the uploaded files in the submission.
